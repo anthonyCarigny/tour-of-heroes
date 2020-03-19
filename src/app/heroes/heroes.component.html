@@ -1,0 +1,18 @@
+<section>
+  <h2>Our Heroes</h2>
+  <div class="input-group mb-3">
+      <input #heroName type="text" class="form-control" placeholder="Hero name" aria-label="Hero name" aria-describedby="button-addon2">
+      <div class="input-group-append">
+        <button class="btn btn-outline-secondary" type="button" id="button-addon2" (click)="add(heroName.value); heroName.value=''">add</button>
+      </div>
+    </div>
+  <ul class="list-group">
+    <li *ngFor="let hero of heroes" class="list-group-item d-flex justify-content-between align-items-center">
+      <a routerLink="/detail/{{hero.id}}">
+        <span *ngIf="hero.icon" class="badge"><img src={{hero.icon}} class="icon"/></span>
+        <span *ngIf="!hero.icon" class="badge">{{hero.id}}</span> {{hero.name}}
+      </a>
+      <button class="delete" title="delete hero" (click)="delete(hero)">x</button>
+    </li>
+  </ul>
+</section>
