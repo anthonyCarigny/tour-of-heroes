@@ -1,47 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
-
-@import '~bootstrap/dist/css/bootstrap.min.css';
-body, html {
-  height: 100%;
-  margin: 0;
-  --primary-color: #121C3D;
-}
-
-body {
-  padding: 10px;
-  /* The image used */
-  background-image: url("./assets/wallpaper.jpg");
-  /* Full height */
-  height: 100vh;
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
+/* Application-wide Styles */
 h1 {
-  color: var(--primary-color);
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 250%;
-}
-
-h2, h3 {
-  color: #D2D2D2;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: lighter;
-}
-
-body, input[type="text"], button {
-  font-family: Cambria, Georgia;
-}
-
-/* everywhere else */
-
-* {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-a {
-  color: white;
-  text-decoration: none;
-}
+    color: #369;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 250%;
+  }
+  h2, h3 {
+    color: #444;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+  }
+  body {
+    margin: 2em;
+  }
+  body, input[type="text"], button {
+    color: #333;
+    font-family: Cambria, Georgia;
+  }
+  /* everywhere else */
+  * {
+    font-family: Arial, Helvetica, sans-serif;
+  }
