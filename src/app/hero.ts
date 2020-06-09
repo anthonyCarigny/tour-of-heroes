@@ -1,5 +1,11 @@
 export interface Hero {
     id: number;
     name: string;
-    description:string;
+    description: string;
+    resourceURI: string;
+    urls: URL[];
+
   }
+
+
+

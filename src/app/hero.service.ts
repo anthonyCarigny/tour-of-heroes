@@ -6,7 +6,7 @@ import { catchError, map, tap } from 'rxjs/operators';
 
 import { Hero } from './hero';
 import { MessageService } from './message.service';
-import { MarvelResponse } from './marvel-response';
+import { CharacterDataWrapper } from './character-data-wrapper ';
 
 @Injectable({
   providedIn: 'root',
@@ -23,7 +23,7 @@ export class HeroService {
   getAvengers(): Observable<Hero[]> {
     const url = `${this.heroesUrl}/series/24229/characters?&apikey=${this.PUBLIC_KEY}`;
     // TODO: send the message _after_ fetching the heroes
-    return this.http.get<MarvelResponse>(url)
+    return this.http.get<CharacterDataWrapper>(url)
     .pipe(
       map(marvelResponse => marvelResponse.data.results),
       tap(h => {
@@ -37,7 +37,7 @@ export class HeroService {
     const url = `${this.heroesUrl}/characters?apikey=${this.PUBLIC_KEY}`;
 
     // TODO: send the message _after_ fetching the heroes
-    return this.http.get<MarvelResponse>(url)
+    return this.http.get<CharacterDataWrapper>(url)
     .pipe(
       map(marvelResponse => marvelResponse.data.results),
       tap(h => {
@@ -49,7 +49,7 @@ export class HeroService {
 
   getHero(id: number): Observable<Hero> {
     const url = `${this.heroesUrl}/characters/${id}?apikey=${this.PUBLIC_KEY}`;
-    return this.http.get<MarvelResponse>(url)
+    return this.http.get<CharacterDataWrapper>(url)
     .pipe(
       map(marvelResponse => marvelResponse.data.results[0]),
       tap(h => {
