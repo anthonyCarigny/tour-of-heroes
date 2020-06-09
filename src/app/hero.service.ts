@@ -12,7 +12,7 @@ import { CharacterDataWrapper } from './character-data-wrapper ';
   providedIn: 'root',
 })
 export class HeroService {
-  private PUBLIC_KEY = "public_key_goes_here";
+  private PUBLIC_KEY = "e7454513a2f63d69c2fef635d740f97c";
   private heroesUrl = `https://gateway.marvel.com:443/v1/public`; // URL to web api
 
   constructor(
