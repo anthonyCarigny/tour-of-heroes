@@ -120,7 +120,8 @@
         },
         "deploy": {
           "builder": "angular-cli-ghpages:deploy",
-          "options": {}
+          "options": {
+            "baseHref": "https://anthonycarigny.github.io/tour-of-heroes/"}
         }
       }
     }
