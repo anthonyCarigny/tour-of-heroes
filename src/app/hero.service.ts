@@ -4,7 +4,7 @@ import { Observable, of } from 'rxjs';
 import { catchError, map, tap } from 'rxjs/operators';
 
 
-import { Hero } from './hero';
+import { Hero } from './core/models/hero';
 import { MessageService } from './message.service';
 import { CharacterDataWrapper } from './character-data-wrapper ';
 
