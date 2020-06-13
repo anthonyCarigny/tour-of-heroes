@@ -1,11 +1,14 @@
 <header>
     <mat-toolbar color="primary">
 
-        <mat-toolbar-row>
+        <mat-toolbar-row class="marvel">
             <h1><a [routerLink]="'/dashboard'">{{title}}</a></h1>
+        </mat-toolbar-row>
+
+        <mat-toolbar-row class="subtitle">
+            <span [routerLink]="'/dashboard'">{{subtitle}}</span>
             <!-- This fills the remaining space of the current row -->
             <span class="fill-remaining-space"></span>
-            <span class="menu-spacer"></span>
             <div>
                 <a mat-button [routerLink]="'/dashboard'"> Dashboard </a>
                 <a mat-button [routerLink]="'/heroes'"> Heroes </a>

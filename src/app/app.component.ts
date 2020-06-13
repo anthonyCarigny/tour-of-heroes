@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'MARVEL TOUR OF HEROES';
+  title = 'MARVEL';
+  subtitle = 'TOUR OF HEROES';
 }

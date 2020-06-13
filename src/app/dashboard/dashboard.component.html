@@ -1,7 +1,7 @@
 <h3>Top Heroes</h3>
 <mat-grid-list cols="4">
   <mat-grid-tile *ngFor="let hero of heroes">
-    <mat-card class="example-card">
+    <mat-card class="card" routerLink="/detail/{{hero.id}}">
       <mat-card-header>
         <div mat-card-avatar class="header-image"></div>
         <mat-card-title>{{hero.name}}</mat-card-title>

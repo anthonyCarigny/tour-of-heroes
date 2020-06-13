@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-@font-face{
+@font-face {
   font-family: Marvel;
   src: url(assets/fonts/MarvelRegular-Dj83.ttf);
 }
@@ -8,12 +8,21 @@ h1 {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 250%;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
 }
 h2,
 h3 {
   color: rgb(180, 180, 180);
   font-family: Arial, Helvetica, sans-serif;
   font-weight: lighter;
+  text-align: center;
+}
+.marvel {
+  text-align: center;
+  margin: 0 auto;
+  background-color: red;
 }
 body {
   margin: 2em;
@@ -28,13 +37,15 @@ button {
 * {
   font-family: Arial, Helvetica, sans-serif;
 }
-h2, h3 {
-  text-align: center;
-}
 a {
   text-decoration: none;
 }
 
-
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
