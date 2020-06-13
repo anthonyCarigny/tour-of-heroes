@@ -1,4 +1,4 @@
-import { Hero } from './core/models/hero';
+import { Hero } from './hero';
 
 export interface CharacterDataWrapper  {
     code: number;

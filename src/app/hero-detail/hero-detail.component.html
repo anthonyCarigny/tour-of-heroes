@@ -1,10 +1,11 @@
-<button (click)="goBack()">go back</button>
-<div *ngIf="hero">
-
-  <h2>{{hero.name | uppercase}} Details</h2>
-  <div>
-    {{hero.description}}
-  </div>
-  <img src={{hero.thumbnail.path}}.{{hero.thumbnail.extension}} alt="" />
-
-</div>
+<mat-card  *ngIf="hero" class="card">
+  <mat-card-header>
+    <div mat-card-avatar class="header-image"></div>
+    <mat-card-title>{{hero.name | uppercase}} Details</mat-card-title>
+  </mat-card-header>
+  <img mat-card-image src="{{hero.thumbnail.path}}/landscape_incredible.{{hero.thumbnail.extension}}"
+    alt="Photo of {{hero.name}}">
+    <mat-card-content>
+      <p>{{hero.description}}</p>
+    </mat-card-content>
+</mat-card>

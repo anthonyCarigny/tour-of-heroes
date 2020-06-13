@@ -4,9 +4,9 @@ import { Observable, of } from 'rxjs';
 import { catchError, map, tap } from 'rxjs/operators';
 
 
-import { Hero } from './core/models/hero';
+import { Hero } from './core/model/hero';
 import { MessageService } from './message.service';
-import { CharacterDataWrapper } from './character-data-wrapper ';
+import { CharacterDataWrapper } from './core/model/character-data-wrapper ';
 
 @Injectable({
   providedIn: 'root',

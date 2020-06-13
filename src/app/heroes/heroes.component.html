@@ -1,8 +1,9 @@
 <h2>My Heroes</h2>
-<ul class="heroes">
-    <li *ngFor="let hero of heroes">
-      <a routerLink="/detail/{{hero.id}}">
-        <span class="badge">{{hero.id}}</span> {{hero.name}}
-      </a>
-    </li>
-  </ul>
+<mat-list>
+  <mat-list-item *ngFor="let hero of heroes" routerLink="/detail/{{hero.id}}">
+    <img matListAvatar src="{{hero.thumbnail.path}}/portrait_small.{{hero.thumbnail.extension}}" alt="picture of {{hero.name}}">
+    <p matLine>
+      <span> {{hero.name}} </span>
+    </p>
+  </mat-list-item>
+</mat-list>
