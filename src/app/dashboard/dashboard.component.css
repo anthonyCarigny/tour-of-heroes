@@ -1,3 +1,6 @@
 .card:hover{
     cursor: pointer;
 }
+mat-grid-list{
+    height: 350px;
+}

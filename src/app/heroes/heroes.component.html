@@ -1,4 +1,4 @@
-<h2>My Heroes</h2>
+<h2>All Heroes</h2>
 <mat-list>
   <mat-list-item *ngFor="let hero of heroes" routerLink="/detail/{{hero.id}}">
     <img matListAvatar src="{{hero.thumbnail.path}}/portrait_small.{{hero.thumbnail.extension}}" alt="picture of {{hero.name}}">
