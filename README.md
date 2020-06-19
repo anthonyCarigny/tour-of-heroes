@@ -1,9 +1,11 @@
 # Marvel's AngularTourOfHeroes
 This project is my take on the angular tutorial TOUR OF HEROES
 
-
-
 It was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
+
+## Live preview
+
+https://anthonycarigny.github.io/tour-of-heroes/dashboard
 
 ## Development server
 
